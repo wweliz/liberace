@@ -1,4 +1,41 @@
-// bower:scss
-// endbower
+// UNIVERSAL STYLING ////////////////////////////
+/////////////////////////////////////////////////
+body {
+	background: #233a40; 
+}
 
-// Custom imports & styles here.
+// TYPOGRAPHY ////////////////////////////////
+/////////////////////////////////////////////////
+p {
+	font: 16px/1.8 "Lato", sans-serif;
+	letter-spacing: 0.075em;
+	color:#fff;
+	margin: 5% auto 5%;
+}
+
+.herotext { 
+	font: 36px/0.75 "Lato", sans-serif;
+	text-align: center;
+}
+
+.FtG {
+	font-family: 'Fredericka the Great', cursive;
+	text-shadow:	#253e45 -1px 1px 0,
+								#253e45 -2px 2px 0,
+								#d45848 -3px 3px 0,
+								#d45848 -4px 4px 0;
+}
+
+// background: rgba(0,0,0,0.2);
+
+// TWINKLE LAYER ////////////////////////////////
+/////////////////////////////////////////////////
+.layer{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.herotext-container { background: red;}
