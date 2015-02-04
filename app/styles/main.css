@@ -1,20 +1,6 @@
 body {
   background: #233a40; }
 
-p {
-  font: 16px/1.8 "Lato", sans-serif;
-  letter-spacing: 0.075em;
-  color: #fff;
-  margin: 5% auto 5%; }
-
-.herotext {
-  font: 36px/0.75 "Lato", sans-serif;
-  text-align: center; }
-
-.FtG {
-  font-family: 'Fredericka the Great', cursive;
-  text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0; }
-
 .layer {
   position: absolute;
   top: 0;
@@ -22,5 +8,115 @@ p {
   width: 100%;
   height: 100%; }
 
-.herotext-container {
-  background: red; }
+.herotext {
+  font: 36px/0.75 'Lato', sans-serif;
+  text-align: center; }
+
+.FtG {
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0; }
+
+h2 {
+  margin-top: 20px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0;
+  text-align: center; }
+
+p {
+  font: 20px/1.8 'Lato', sans-serif;
+  letter-spacing: 0.075em;
+  color: #fff;
+  margin: 5% auto 5%; }
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.1em;
+  margin-top: 18px;
+  color: #d45848; }
+
+hr {
+  margin: 4px 0; }
+
+ul, li {
+  list-style-type: none;
+  font: 14px/1.8 'Lato', sans-serif;
+  letter-spacing: 0.075em;
+  color: #fff;
+  margin: 0; }
+
+#skills p {
+  font: 14px/1.8 'Lato', sans-serif;
+  letter-spacing: 0.075em; }
+
+.nopadding {
+  padding: 0; }
+
+.button {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  margin: 5px; }
+
+.nav {
+  text-align: center; }
+
+#last {
+  margin-bottom: 40px; }
+
+.footer {
+  background: rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px; }
+  .footer p {
+    font: 14px/1.8 'Lato', sans-serif;
+    letter-spacing: 0.075em; }
+  .footer a {
+    font: 14px/1.8 'Lato', sans-serif;
+    letter-spacing: 0.075em;
+    color: #fff;
+    font-style: italic; }
+  .footer img {
+    height: 24px;
+    margin-right: 8px; }
+
+.heart {
+  color: #d45848;
+  -webkit-animation: heart 1s linear infinite;
+  -ms-animation: heart 1s linear infinite;
+  animation: heart 1s linear infinite; }
+
+@keyframes "heart" {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes "heart" {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-ms-keyframes "heart" {
+  0% {
+    transform: scale(1.1); }
+
+  50% {
+    transform: scale(0.8); }
+
+  100% {
+    transform: scale(1); } }
