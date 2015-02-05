@@ -3,18 +3,21 @@
 // USING FITTEXT JQUERY PLUG-IN //////////////////////
 $('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
 
-// CENTER ABOUT SECTION TEXT /////////////////////////
- 
 //////////////////////////////////////////////////////////////////////////
-// VARIABLE AND FUNCTION DEFINITIONS /////////////////////////////////////
+// FOUNDATION 5 MEDIA BREAKPOINTS ////////////////////////////////////////
+// Small screens -- max-width 640px (max-width: 40em)
+// Medium screens -- min-width 641px (40.063em) and max-width 1024px (64em)
+// Large screens -- min-width 1025px (64.063em)
+ 
+// CENTER ABOUT SECTION TEXT /////////////////////////
 function centerAboutText() {
 	var smallScreen = window.matchMedia("screen and (max-width: 40em)")
 
 	if (smallScreen.matches){
-		$('first-p').addClass('centeredText');
+		$('.first-p').addClass('centeredText');
 		console.log('small screen');
 	} else {
-		$('first-p').removeClass('centeredText');
+		$('.first-p').removeClass('centeredText');
 		console.log('not a small screen');
 	}
 }
