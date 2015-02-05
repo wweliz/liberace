@@ -82,10 +82,6 @@ ul, li {
   color: #fff;
   margin: 0; }
 
-#skills p {
-  font: 14px/1.8 'Lato', sans-serif;
-  letter-spacing: 0.075em; }
-
 .nopadding {
   padding: 0; }
 
@@ -102,16 +98,14 @@ ul, li {
     height: 24px;
     margin-right: 8px; }
 
-.icon {
-  height: 24px; }
-  .icon:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transform-origin: center;
-    -moz-transform: center;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    transition: all 1s ease-in-out; }
+.icon:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transform-origin: center;
+  -moz-transform: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transition: all 1s ease-in-out; }
 
 .heart {
   color: #d45848;

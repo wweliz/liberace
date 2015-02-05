@@ -115,11 +115,6 @@ ul, li {
 	margin: 0;
 }
 
-#skills p {
-	font: 14px/1.8 'Lato', sans-serif;
-	letter-spacing: 0.075em;
-}
-
 .nopadding { padding: 0;}
 
 // FOOTER ///////////////////////////////////////
@@ -141,27 +136,23 @@ ul, li {
 	}
 }
 
-// ICON ROTATE //////////////////////////////////
+// ICON HOVER //////////////////////////////////
 /////////////////////////////////////////////////
-.icon {
-	height: 24px;
+.icon:hover {
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	transform:rotate(360deg);
 
-	&:hover {
-		-webkit-transform:rotate(360deg);
-		-moz-transform:rotate(360deg);
-		-o-transform:rotate(360deg);
-		transform:rotate(360deg);
+	-webkit-transform-origin:center;
+	-moz-transform:center;
+	-o-transform-origin:center;
+	transform-origin:center;
 
-		-webkit-transform-origin:center;
-		-moz-transform:center;
-		-o-transform-origin:center;
-		transform-origin:center;
-
-		-webkit-transition: all 1s ease-in-out;
-		-moz-transition: all 1s ease-in-out;
-		-o-transition: all 1s ease-in-out;
-		transition: all 1s ease-in-out;
-	}
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 // PULSATING HEART //////////////////////////////
