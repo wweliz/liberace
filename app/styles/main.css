@@ -17,13 +17,38 @@ body {
   font-family: 'Fredericka the Great', cursive;
   text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0; }
 
+.nav {
+  text-align: center; }
+
+.button {
+  font: 1.125em 'Lato', sans-serif;
+  letter-spacing: 0.075em;
+  font-style: normal;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  margin: 5px; }
+  .button:hover {
+    box-shadow: inset 0px 0px 0px 1px #fff; }
+
 .profile-photo {
-  border-radius: 50%; }
+  text-align: center; }
+  .profile-photo img {
+    border-radius: 50%; }
 
 .first-p {
   font-size: 36px;
   color: #d45848;
   margin: 0; }
+
+.centeredText {
+  text-align: center; }
+
+.download-resume img {
+  height: 24px; }
+
+a {
+  color: #fff;
+  font-style: italic; }
 
 h2 {
   margin: 20px 0;
@@ -34,7 +59,7 @@ h2 {
   text-align: center; }
 
 p {
-  font: 20px/1.8 'Lato', sans-serif;
+  font: 1.125em/1.8 'Lato', sans-serif;
   letter-spacing: 0.075em;
   color: #fff; }
 
@@ -61,33 +86,29 @@ ul, li {
 .nopadding {
   padding: 0; }
 
-.button {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 7px;
-  margin: 5px; }
-  .button:hover {
-    border: 1px solid #fff; }
-
-.nav {
-  text-align: center; }
-
 #last {
   margin-bottom: 40px; }
 
 .footer {
   background: rgba(0, 0, 0, 0.2);
   padding-bottom: 20px; }
-  .footer p {
+  .footer p, .footer a {
     font: 14px/1.8 'Lato', sans-serif;
     letter-spacing: 0.075em; }
-  .footer a {
-    font: 14px/1.8 'Lato', sans-serif;
-    letter-spacing: 0.075em;
-    color: #fff;
-    font-style: italic; }
   .footer img {
     height: 24px;
     margin-right: 8px; }
+
+.icon img {
+  height: 24px; }
+.icon:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transform-origin: center;
+  -moz-transform: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transition: all 1s ease-in-out; }
 
 .heart {
   color: #d45848;

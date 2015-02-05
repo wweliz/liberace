@@ -30,17 +30,52 @@ body {
 								#d45848 -4px 4px 0;
 }
 
+// NAVIGATION & BUTTON STYLING //////////////////
+/////////////////////////////////////////////////
+.nav {text-align: center;} //nav buttons
+
+.button {
+	font: 1.125em 'Lato', sans-serif;
+	letter-spacing: 0.075em;
+	font-style: normal;
+	background: rgba(0,0,0,0.2);
+	border-radius: 7px;
+	margin: 5px;
+
+	&:hover {
+    -webkit-box-shadow:inset 0px 0px 0px 1px #fff;
+    -moz-box-shadow:inset 0px 0px 0px 1px #fff;
+    box-shadow:inset 0px 0px 0px 1px #fff;
+	}
+		// border: 1px solid #fff; }
+}
+
 // ABOUT SECTION ////////////////////////////////
 /////////////////////////////////////////////////
-.profile-photo { border-radius: 50%; }
+.profile-photo {
+	text-align: center;
+	img {	border-radius: 50%; }
+}
+
 .first-p {
 	font-size: 36px;
 	color: #d45848;
 	margin: 0;
 }
 
+.centeredText { text-align: center; }
+
+// WORK SECTION /////////////////////////////////
+.download-resume	img { height: 24px; }
+
 // TYPOGRAPHY ///////////////////////////////////
 /////////////////////////////////////////////////
+// LINKS ////////////////////
+a {
+	color: #fff;
+	font-style: italic;
+}
+
 // BIG HEADER & TEXT ////////
 h2 {
 	margin: 20px 0;
@@ -55,7 +90,7 @@ h2 {
 }
 
 p {
-	font: 20px/1.8 'Lato', sans-serif;
+	font: 1.125em/1.8 'Lato', sans-serif;
 	letter-spacing: 0.075em;
 	color:#fff;
 
@@ -86,18 +121,7 @@ ul, li {
 
 .nopadding { padding: 0;}
 
-// BUTTON STYLING ///////////////////////////////
-/////////////////////////////////////////////////
-.button {
-	background: rgba(0,0,0,0.2);
-	border-radius: 7px;
-	margin: 5px;
 
-	&:hover { border: 1px solid #fff; }
-}
-
-
-.nav {text-align: center;} //nav buttons
 
 // FOOTER ///////////////////////////////////////
 /////////////////////////////////////////////////
@@ -107,21 +131,37 @@ ul, li {
 	background: rgba(0,0,0,0.2);
 	padding-bottom: 20px;
 
-	p {
+	p, a {
 		font: 14px/1.8 'Lato', sans-serif;
 		letter-spacing: 0.075em;
-	}
-
-	a {
-		font: 14px/1.8 'Lato', sans-serif;
-		letter-spacing: 0.075em;
-		color: #fff;
-		font-style: italic;
 	}
 
 	img {
 		height: 24px;
 		margin-right: 8px;
+	}
+}
+
+// ICON ROTATE //////////////////////////////////
+/////////////////////////////////////////////////
+.icon {
+	img { height: 24px; }
+
+	&:hover {
+		-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);
+
+		-webkit-transform-origin:center;
+		-moz-transform:center;
+		-o-transform-origin:center;
+		transform-origin:center;
+
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
 	}
 }
 

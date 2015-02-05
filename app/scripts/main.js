@@ -3,6 +3,33 @@
 // USING FITTEXT JQUERY PLUG-IN //////////////////////
 $('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
 
+// CENTER ABOUT SECTION TEXT /////////////////////////
+ 
+//////////////////////////////////////////////////////////////////////////
+// VARIABLE AND FUNCTION DEFINITIONS /////////////////////////////////////
+function centerAboutText() {
+	var smallScreen = window.matchMedia("screen and (max-width: 40em)")
+
+	if (smallScreen.matches){
+		$('first-p').addClass('centeredText');
+		console.log('small screen');
+	} else {
+		$('first-p').removeClass('centeredText');
+		console.log('not a small screen');
+	}
+}
+ 
+// On the original page load...
+$(document).ready(function() {
+	centerAboutText();
+});
+ 
+// When the window is resized... 
+$(window).resize(function() {
+  centerAboutText();
+});
+
+
 // TINY COLUMNS MEDIA QUERY //////////////////////////
 function makeTinyColumns() {
 	var mq = window.matchMedia('screen and (min-width: 920px)');
@@ -10,27 +37,25 @@ function makeTinyColumns() {
 	if(mq.matches) {
 	    // width of browser is more than 920px
 	   	// show 2 column layout
-			// $('.tiny').addClass('.columns');
-			// $('.tiny').addClass('.nopadding');
+			// $('.tiny').addClass('.columns .nopadding');
 			console.log('mq ran - bigger than 920px');
 
 	} else {
 	    // width of browser is less than 920px
-			$('div.small-6.columns').removeClass('.columns');
-			$('div.small-6.columns').removeClass('.nopadding');
+			$('div.small-6.columns').removeClass('.columns .nopadding');
 			console.log('mq ran - smaller than 920px');
 	}	
 }
 
 // On the original page load...
-$(document).ready(function() {
-	makeTinyColumns();
-});
+// $(document).ready(function() {
+// 	makeTinyColumns();
+// });
 
-// When the window is resized... 
-$(window).resize(function() {
-  makeTinyColumns();
-});
+// // When the window is resized... 
+// $(window).resize(function() {
+//   makeTinyColumns();
+// });
 
 // GENERATING SPARKLE BACKGROUND /////////////////////
 // $(document).ready(function(){
