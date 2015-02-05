@@ -11,7 +11,7 @@ $('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
  
 // CENTER ABOUT SECTION TEXT /////////////////////////
 function centerAboutText() {
-	var smallScreen = window.matchMedia('screen and (max-width: 40em)')
+	var smallScreen = window.matchMedia('screen and (max-width: 40em)');
 
 	if (smallScreen.matches){
 		$('.first-p').addClass('centeredText');

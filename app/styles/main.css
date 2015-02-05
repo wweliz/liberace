@@ -43,6 +43,9 @@ body {
 .centeredText {
   text-align: center; }
 
+.empty {
+  clear: both; }
+
 #cool:hover {
   fill: #007ba0; }
 

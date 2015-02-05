@@ -64,6 +64,9 @@ body {
 
 .centeredText { text-align: center; }
 
+// SKILLS SECTION ///////////////////////////////
+.empty { clear: both; }
+
 // WORK SECTION /////////////////////////////////
 #cool:hover { fill: #007ba0; }
 
@@ -92,7 +95,6 @@ p {
 	font: 1.125em/1.8 'Lato', sans-serif;
 	letter-spacing: 0.075em;
 	color:#fff;
-
 }
 
 // SMALLER HEADER & TEXT ////
