@@ -11,54 +11,36 @@ $('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
  
 // CENTER ABOUT SECTION TEXT /////////////////////////
 function centerAboutText() {
-	var smallScreen = window.matchMedia("screen and (max-width: 40em)")
+	var smallScreen = window.matchMedia('screen and (max-width: 40em)')
 
 	if (smallScreen.matches){
 		$('.first-p').addClass('centeredText');
-		console.log('small screen');
 	} else {
 		$('.first-p').removeClass('centeredText');
-		console.log('not a small screen');
 	}
 }
- 
+
+function make2Columns() {
+	var twoColumn = window.matchMedia('(min-width: 40.063em) and (max-width: 850px)');
+
+	if (twoColumn.matches){
+		$('.2col').removeClass('columns nopadding');
+	} else {
+		$('.2col').addClass('columns nopadding');
+	}
+}
+
 // On the original page load...
 $(document).ready(function() {
 	centerAboutText();
+	make2Columns();
 });
  
 // When the window is resized... 
 $(window).resize(function() {
   centerAboutText();
+  make2Columns();
 });
-
-
-// TINY COLUMNS MEDIA QUERY //////////////////////////
-function makeTinyColumns() {
-	var mq = window.matchMedia('screen and (min-width: 920px)');
-
-	if(mq.matches) {
-	    // width of browser is more than 920px
-	   	// show 2 column layout
-			// $('.tiny').addClass('.columns .nopadding');
-			console.log('mq ran - bigger than 920px');
-
-	} else {
-	    // width of browser is less than 920px
-			$('div.small-6.columns').removeClass('.columns .nopadding');
-			console.log('mq ran - smaller than 920px');
-	}	
-}
-
-// On the original page load...
-// $(document).ready(function() {
-// 	makeTinyColumns();
-// });
-
-// // When the window is resized... 
-// $(window).resize(function() {
-//   makeTinyColumns();
-// });
 
 // GENERATING SPARKLE BACKGROUND /////////////////////
 // $(document).ready(function(){
