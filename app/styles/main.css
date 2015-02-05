@@ -43,8 +43,8 @@ body {
 .centeredText {
   text-align: center; }
 
-.download-resume img {
-  height: 24px; }
+#cool:hover {
+  fill: #007ba0; }
 
 a {
   color: #fff;
@@ -99,16 +99,16 @@ ul, li {
     height: 24px;
     margin-right: 8px; }
 
-.icon img {
+.icon {
   height: 24px; }
-.icon:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transform-origin: center;
-  -moz-transform: center;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  transition: all 1s ease-in-out; }
+  .icon:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: center;
+    -moz-transform: center;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: all 1s ease-in-out; }
 
 .heart {
   color: #d45848;

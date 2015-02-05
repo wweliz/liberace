@@ -47,7 +47,6 @@ body {
     -moz-box-shadow:inset 0px 0px 0px 1px #fff;
     box-shadow:inset 0px 0px 0px 1px #fff;
 	}
-		// border: 1px solid #fff; }
 }
 
 // ABOUT SECTION ////////////////////////////////
@@ -66,7 +65,7 @@ body {
 .centeredText { text-align: center; }
 
 // WORK SECTION /////////////////////////////////
-.download-resume	img { height: 24px; }
+#cool:hover { fill: #007ba0; }
 
 // TYPOGRAPHY ///////////////////////////////////
 /////////////////////////////////////////////////
@@ -121,8 +120,6 @@ ul, li {
 
 .nopadding { padding: 0;}
 
-
-
 // FOOTER ///////////////////////////////////////
 /////////////////////////////////////////////////
 #last {margin-bottom: 40px;} //adds space for footer
@@ -145,7 +142,7 @@ ul, li {
 // ICON ROTATE //////////////////////////////////
 /////////////////////////////////////////////////
 .icon {
-	img { height: 24px; }
+	height: 24px;
 
 	&:hover {
 		-webkit-transform:rotate(360deg);
