@@ -1,54 +1,10 @@
 'use strict';
 
-// USING FITTEXT JQUERY PLUG-IN //////////////////////
-$('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
-
 //////////////////////////////////////////////////////////////////////////
-// FOUNDATION 5 MEDIA BREAKPOINTS ////////////////////////////////////////
-// Small screens -- max-width 640px (max-width: 40em)
-// Medium screens -- min-width 641px (40.063em) and max-width 1024px (64em)
-// Large screens -- min-width 1025px (64.063em)
- 
-// CENTER ABOUT SECTION TEXT /////////////////////////
-function centerAboutText() {
-	var smallScreen = window.matchMedia('screen and (max-width: 40em)');
-
-	if (smallScreen.matches){
-		$('.first-p').addClass('centeredText');
-	} else {
-		$('.first-p').removeClass('centeredText');
-	}
-}
-
-function make2Columns() {
-	var twoColumn = window.matchMedia('(min-width: 40.063em) and (max-width: 850px)');
-
-	if (twoColumn.matches){
-		$('.2col').removeClass('columns nopadding');
-	} else {
-		$('.2col').addClass('columns nopadding');
-	}
-}
-
-// On the original page load...
-$(document).ready(function() {
-	centerAboutText();
-	make2Columns();
-});
- 
-// When the window is resized... 
-$(window).resize(function() {
-  centerAboutText();
-  make2Columns();
-});
-
-// GENERATING SPARKLE BACKGROUND /////////////////////
+// GENERATING SPARKLE BACKGROUND /////////////////////////////////////////
 $(document).ready(function(){
 	var layers=8;
 	var starDensity=0.0025;
-	
-	// var ww=$(window).width();
-	// var wh=$(window).height();
 
 	var ww =$(document).width(); // returns width of HTML document
 	var wh =$(document).height(); // returns height of HTML document
@@ -128,3 +84,43 @@ $(document).ready(function(){
 		ctx.translate(-x,-y);
 	}
  });
+
+// RESIZING HEROTEXT USING FITTEXT ///////////////////////////////////////
+$('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
+
+//////////////////////////////////////////////////////////////////////////
+// CENTER ABOUT SECTION TEXT /////////////////////////////////////////////
+function centerAboutText() {
+	// Foundation small screens media breakpoint -- max-width 640px (max-width: 40em)
+	var smallScreen = window.matchMedia('screen and (max-width: 40em)');
+
+	if (smallScreen.matches){
+		$('.first-p').addClass('centeredText');
+	} else {
+		$('.first-p').removeClass('centeredText');
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////
+// FORMAT 2 COLUMN LAYOUT FOR SKILLS SECTION /////////////////////////////
+function make2Columns() {
+	var twoColumn = window.matchMedia('(min-width: 40.063em) and (max-width: 850px)');
+
+	if (twoColumn.matches){
+		$('.2col').removeClass('columns nopadding');
+	} else {
+		$('.2col').addClass('columns nopadding');
+	}
+}
+
+// On the original page load...
+$(document).ready(function() {
+	centerAboutText();
+	make2Columns();
+});
+ 
+// When the window is resized... 
+$(window).resize(function() {
+  centerAboutText();
+  make2Columns();
+});
