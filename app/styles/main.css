@@ -1,6 +1,39 @@
 body {
   background: #233a40; }
 
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin: 1.25em 0;
+  color: #fff;
+  text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0; }
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.1em;
+  margin-top: 1.25em;
+  color: #d45848; }
+
+hr {
+  margin: 4px 0; }
+
+p {
+  font: 1.125em/1.8 'Lato', sans-serif;
+  letter-spacing: 0.075em;
+  color: #fff; }
+
+ul, li {
+  list-style-type: none;
+  font: 0.875em/1.8 'Lato', sans-serif;
+  letter-spacing: 0.075em;
+  color: #fff;
+  margin: 0; }
+
+a {
+  color: #fff;
+  font-style: italic; }
+
 .layer {
   position: absolute;
   top: 0;
@@ -8,9 +41,11 @@ body {
   width: 100%;
   height: 100%; }
 
+.empty-top {
+  min-height: 3.125em; }
+
 .herotext {
-  font: 36px/0.75 'Lato', sans-serif;
-  margin: 5% auto 5%;
+  font: 2.25em/1.25 'Lato', sans-serif;
   text-align: center; }
 
 .FtG {
@@ -36,66 +71,31 @@ body {
     border-radius: 50%; }
 
 .first-p {
-  font-size: 36px;
+  font-size: 2.25em;
   color: #d45848;
   margin: 0; }
 
 .centeredText {
   text-align: center; }
 
-.empty {
-  clear: both; }
-
-#cool:hover {
-  fill: #007ba0; }
-
-a {
-  color: #fff;
-  font-style: italic; }
-
-h2 {
-  margin: 20px 0;
-  color: #fff;
-  letter-spacing: 0.1em;
-  font-family: 'Fredericka the Great', cursive;
-  text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0;
-  text-align: center; }
-
-p {
-  font: 1.125em/1.8 'Lato', sans-serif;
-  letter-spacing: 0.075em;
-  color: #fff; }
-
-h5 {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 0.1em;
-  margin-top: 18px;
-  color: #d45848; }
-
-hr {
-  margin: 4px 0; }
-
-ul, li {
-  list-style-type: none;
-  font: 14px/1.8 'Lato', sans-serif;
-  letter-spacing: 0.075em;
-  color: #fff;
-  margin: 0; }
-
 .nopadding {
   padding: 0; }
 
+.empty {
+  clear: both; }
+
 #last {
-  margin-bottom: 40px; }
+  margin-bottom: 2.5em; }
 
 .footer {
   background: rgba(0, 0, 0, 0.2);
   padding-bottom: 20px; }
   .footer p, .footer a {
-    font: 14px/1.8 'Lato', sans-serif;
+    font: 0.875em/1.8 'Lato', sans-serif;
     letter-spacing: 0.075em; }
+  .footer a {
+    font-style: italic; }
   .footer img {
-    height: 24px;
     margin-right: 8px; }
 
 .icon:hover {
