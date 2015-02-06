@@ -3,11 +3,13 @@
 //////////////////////////////////////////////////////////////////////////
 // GENERATING SPARKLE BACKGROUND /////////////////////////////////////////
 $(document).ready(function(){
-	var layers=8;
-	var starDensity=0.0025;
+	var layers=3;
+	var starDensity=0.0125;
+
+	var fh = $('.footer').height();
 
 	var ww =$(document).width(); // returns width of HTML document
-	var wh =$(document).height(); // returns height of HTML document
+	var wh =$(document).height() - fh; // returns height of HTML document
 
 	var dpi=window.devicePixelRatio;
 	var cw=ww*dpi;
