@@ -1,3 +1,4 @@
+/* global TweenMax, Quad*/
 'use strict';
 
 //////////////////////////////////////////////////////////////////////////
@@ -69,21 +70,21 @@ $(document).ready(function(){
 		}
 		
 		var id=Math.round(Math.random()*(contexts.length-1));
-		var ctx=contexts[id];
+		var cntxt=contexts[id];
 
-		ctx.translate(x,y);
-		ctx.globalAlpha = a;
-		ctx.rotate(Math.PI/4);
-		ctx.fillRect(0,0,s*dpi,s*dpi);
+		cntxt.translate(x,y);
+		cntxt.globalAlpha = a;
+		cntxt.rotate(Math.PI/4);
+		cntxt.fillRect(0,0,s*dpi,s*dpi);
 		
 		if(s>=1){
-		ctx.globalAlpha = 0.03;
+		cntxt.globalAlpha = 0.03;
 		var shineSize=(s*s*s)*1.5*dpi;
-		ctx.fillRect((s-(shineSize))/2,(s-(shineSize))/2,shineSize,shineSize);
+		cntxt.fillRect((s-(shineSize))/2,(s-(shineSize))/2,shineSize,shineSize);
 		}	
 			
-		ctx.rotate(-Math.PI/4);
-		ctx.translate(-x,-y);
+		cntxt.rotate(-Math.PI/4);
+		cntxt.translate(-x,-y);
 	}
  });
 
