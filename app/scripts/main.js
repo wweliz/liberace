@@ -3,14 +3,15 @@
 
 //////////////////////////////////////////////////////////////////////////
 // GENERATING SPARKLE BACKGROUND /////////////////////////////////////////
+
 $(document).ready(function(){
 	var layers=3;
 	var starDensity=0.0125;
 
+	var dh = $(document).height();
 	var fh = $('.footer').height();
-
+	var wh = (dh - fh );// returns height of HTML document
 	var ww =$(document).width(); // returns width of HTML document
-	var wh =$(document).height() - fh; // returns height of HTML document
 
 	var dpi=window.devicePixelRatio;
 	var cw=ww*dpi;
@@ -78,15 +79,24 @@ $(document).ready(function(){
 		cntxt.fillRect(0,0,s*dpi,s*dpi);
 		
 		if(s>=1){
-		cntxt.globalAlpha = 0.03;
-		var shineSize=(s*s*s)*1.5*dpi;
-		cntxt.fillRect((s-(shineSize))/2,(s-(shineSize))/2,shineSize,shineSize);
+			cntxt.globalAlpha = 0.03;
+			var shineSize=(s*s*s)*1.5*dpi;
+			cntxt.fillRect((s-(shineSize))/2,(s-(shineSize))/2,shineSize,shineSize);
 		}	
-			
+		
 		cntxt.rotate(-Math.PI/4);
 		cntxt.translate(-x,-y);
 	}
  });
+
+//////////////////////////////////////////////////////////////////////////
+// RESIZE SPARKLE CANVAS TO MATCH SCREEN /////////////////////////////////
+function resizeCanvas() {
+	var canvas = $('.layer');
+
+	canvas.height = $(window).height(); - $('.footer').height();
+	canvas.width = $(window).width();
+}
 
 // RESIZING HEROTEXT USING FITTEXT ///////////////////////////////////////
 $('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
@@ -124,6 +134,7 @@ $(document).ready(function() {
  
 // When the window is resized... 
 $(window).resize(function() {
+	resizeCanvas();
   centerAboutText();
   make2Columns();
 });
