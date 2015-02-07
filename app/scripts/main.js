@@ -3,8 +3,7 @@
 
 //////////////////////////////////////////////////////////////////////////
 // GENERATING SPARKLE BACKGROUND /////////////////////////////////////////
-
-$(document).ready(function(){
+function makeSparkles() {
 	var layers=3;
 	var starDensity=0.0125;
 
@@ -87,7 +86,7 @@ $(document).ready(function(){
 		cntxt.rotate(-Math.PI/4);
 		cntxt.translate(-x,-y);
 	}
- });
+}
 
 //////////////////////////////////////////////////////////////////////////
 // RESIZE SPARKLE CANVAS TO MATCH SCREEN /////////////////////////////////
@@ -126,13 +125,14 @@ function make2Columns() {
 	}
 }
 
-// On the original page load...
+//////////////////////////////////////////////////////////////////////////
+// CALL FUNCTIONS ON PAGE LOAD & RESIZE //////////////////////////////////
 $(document).ready(function() {
+	makeSparkles();
 	centerAboutText();
 	make2Columns();
 });
  
-// When the window is resized... 
 $(window).resize(function() {
 	resizeCanvas();
   centerAboutText();
