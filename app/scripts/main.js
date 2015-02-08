@@ -1,9 +1,9 @@
 /* global TweenMax, Quad*/
 'use strict';
 
+// INITIALIZE FOUNDATION /////////////////////////////////////////////////
 $(document).foundation();
 
-//////////////////////////////////////////////////////////////////////////
 // GENERATING SPARKLE BACKGROUND /////////////////////////////////////////
 function makeSparkles() {
 	var layers=3;
@@ -90,7 +90,6 @@ function makeSparkles() {
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////
 // RESIZE SPARKLE CANVAS TO MATCH SCREEN /////////////////////////////////
 function resizeCanvas() {
 	var canvas = $('.layer');
@@ -102,7 +101,6 @@ function resizeCanvas() {
 // RESIZING HEROTEXT USING FITTEXT ///////////////////////////////////////
 $('.herotext').fitText(1.75, { minFontSize: '30px', maxFontSize: '100px' });
 
-//////////////////////////////////////////////////////////////////////////
 // CENTER ABOUT SECTION TEXT /////////////////////////////////////////////
 function centerAboutText() {
 	// Foundation small screens media breakpoint -- max-width 640px (max-width: 40em)
@@ -115,7 +113,6 @@ function centerAboutText() {
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////
 // FORMAT 2 COLUMN LAYOUT FOR SKILLS SECTION /////////////////////////////
 function make2Columns() {
 	var twoColumn = window.matchMedia('(min-width: 40.063em) and (max-width: 850px)');
@@ -127,16 +124,52 @@ function make2Columns() {
 	}
 }
 
-//////////////////////////////////////////////////////////////////////////
+// INITIALIZE RESPONSIVE SLIDER FOR WORK SECTION /////////////////////////
+function initSlider() {
+	$('.slider').slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+}
+
 // CALL FUNCTIONS ON PAGE LOAD & RESIZE //////////////////////////////////
 $(document).ready(function() {
 	makeSparkles();
 	centerAboutText();
 	make2Columns();
+	initSlider();
 });
- 
+
 $(window).resize(function() {
 	resizeCanvas();
-  centerAboutText();
-  make2Columns();
+	centerAboutText();
+	make2Columns();
 });

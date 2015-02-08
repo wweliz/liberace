@@ -84,8 +84,8 @@ a {
 .empty {
   clear: both; }
 
-#work img {
-  border-radius: 7px; }
+.slider {
+  margin: 0 30px; }
 
 .footer {
   background: rgba(0, 0, 0, 0.2);

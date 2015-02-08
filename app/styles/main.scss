@@ -109,12 +109,10 @@ a {
 .empty { clear: both; }
 
 // WORK SECTION /////////////////////////////////
-#work img { 	border-radius: 7px; }
+.slider { margin: 0 30px; } //space for arrows
 
 // FOOTER ///////////////////////////////////////
 /////////////////////////////////////////////////
-// #last {margin-bottom: 2.5em;} //adds space for footer
-
 .footer {
 	background: rgba(0,0,0,0.2);
 	padding-bottom: 20px;
