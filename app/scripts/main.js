@@ -125,9 +125,16 @@ function make2Columns() {
 }
 
 // INITIALIZE RESPONSIVE SLIDER FOR WORK SECTION /////////////////////////
+
+//////////////////////////////////////////////////////////////////////////
+// FOUNDATION 5 MEDIA BREAKPOINTS ////////////////////////////////////////
+// Small screens -- max-width 640px (max-width: 40em)
+// Medium screens -- min-width 641px (40.063em) and max-width 1024px (64em)
+// Large screens -- min-width 1025px (64.063em)
+
 function initSlider() {
 	$('.slider').slick({
-		dots: true,
+		dots: false,
 		infinite: false,
 		speed: 300,
 		slidesToShow: 4,
