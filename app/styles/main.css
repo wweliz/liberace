@@ -34,6 +34,9 @@ a {
   color: #fff;
   font-style: italic; }
 
+.centerText {
+  text-align: center; }
+
 .layer {
   position: fixed;
   top: 0;
@@ -51,9 +54,6 @@ a {
 .FtG {
   font-family: 'Fredericka the Great', cursive;
   text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0; }
-
-.nav {
-  text-align: center; }
 
 .button {
   font: 1.125em 'Lato', sans-serif;
@@ -83,6 +83,9 @@ a {
 
 .empty {
   clear: both; }
+
+#work img {
+  border-radius: 7px; }
 
 .footer {
   background: rgba(0, 0, 0, 0.2);
