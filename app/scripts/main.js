@@ -130,40 +130,11 @@ function make2Columns() {
 	}
 }
 
-// INITIALIZE RESPONSIVE SLIDER FOR WORK SECTION /////////////////////////
-function initSlider() {
-	$('.slider').slick({
-		accessibility: true,
-		dots: false,
-		infinite: true,
-		speed: 300,
-		slidesToShow: 3,
-		slidesToScroll: 3,
-		responsive: [
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
-	});
-}
-
 // CALL FUNCTIONS ON PAGE LOAD & RESIZE //////////////////////////////////
 $(document).ready(function() {
 	makeSparkles();
 	centerAboutText();
 	make2Columns();
-	initSlider();
 });
 
 $(window).resize(function() {
