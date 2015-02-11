@@ -14,7 +14,7 @@ h2 {
 								#d45848 -4px 4px 0;
 }
 
-h5 {
+h5, h6 {
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 0.1em;
 	margin-top: 1.25em;
@@ -82,9 +82,9 @@ a {
 	margin: 5px;
 
 	&:hover {
-    -webkit-box-shadow:inset 0px 0px 0px 1px #fff;
-    -moz-box-shadow:inset 0px 0px 0px 1px #fff;
-    box-shadow:inset 0px 0px 0px 1px #fff;
+		-webkit-box-shadow:inset 0px 0px 0px 1px #fff;
+		-moz-box-shadow:inset 0px 0px 0px 1px #fff;
+		box-shadow:inset 0px 0px 0px 1px #fff;
 	}
 }
 
@@ -110,6 +110,8 @@ a {
 
 // WORK SECTION /////////////////////////////////
 .slider { margin: 0 1.875em 1.875em 1.875em; }
+
+.project-text { max-width: 40em; }
 
 // FOOTER ///////////////////////////////////////
 /////////////////////////////////////////////////

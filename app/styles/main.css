@@ -9,7 +9,7 @@ h2 {
   color: #fff;
   text-shadow: #253e45 -1px 1px 0, #253e45 -2px 2px 0, #d45848 -3px 3px 0, #d45848 -4px 4px 0; }
 
-h5 {
+h5, h6 {
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.1em;
   margin-top: 1.25em;
@@ -86,6 +86,9 @@ a {
 
 .slider {
   margin: 0 1.875em 1.875em 1.875em; }
+
+.project-text {
+  max-width: 40em; }
 
 .footer {
   background: rgba(0, 0, 0, 0.2);
