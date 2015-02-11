@@ -101,17 +101,25 @@ a {
 	margin: 0;
 }
 
-.centeredText { text-align: center; }
-
 // SKILLS SECTION ///////////////////////////////
 .nopadding { padding: 0;}
 
 .empty { clear: both; }
 
 // WORK SECTION /////////////////////////////////
-.slider { margin: 0 1.875em 1.875em 1.875em; }
+.centerImage {
+  display: block;
+  margin: auto;
+}
 
-.project-text { max-width: 40em; }
+.mice, .dice, .eskimo, .chomarat, .hoowaki, .photography, .fluor, .scansource {
+	p:last-of-type { margin: 0; }
+	padding: 1.25em;
+}
+
+.mice, .eskimo, .hoowaki, .fluor {
+  background-color: rgba(255, 255, 255, 0.05);
+}
 
 // FOOTER ///////////////////////////////////////
 /////////////////////////////////////////////////

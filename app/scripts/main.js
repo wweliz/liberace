@@ -113,9 +113,9 @@ function centerAboutText() {
 	var smallScreen = window.matchMedia('screen and (max-width: 40em)');
 
 	if (smallScreen.matches){
-		$('.first-p').addClass('centeredText');
+		$('.first-p').addClass('centerText');
 	} else {
-		$('.first-p').removeClass('centeredText');
+		$('.first-p').removeClass('centerText');
 	}
 }
 
@@ -157,39 +157,6 @@ function initSlider() {
 		]
 	});
 }
-
-// REPLACE PROJECT TEXT ON MOUSEOVER ///////////////////////////////////// 
-$('.mice').mouseover(function() {
-	$('.project-text').html("<h5>Mice On Main: The App</h5><p>Mice On Main is a webapp that utilizes the HTML5 geolocation API to help visitors to Greenville find the mice sculptures hidden along Main Street in Greenville, SC.</p><h6>Build Summary:</h6><p>HTML, Sass, JavaScript, jQuery, Underscore, local camera access, Parse SDK, HTML5 geolocation API</p>");
-});
-
-$('.dice').mouseover(function() {
-	$('.project-text').html("<h5>AwesomeDice</h5><p>AwesomeDice is a webapp that simulates rolling dice at a casino table. Users input the number of dice rolled and the number of sides on each die, and a then shown a representation of the dice on the table.</p><h6>Build Summary:</h6><p>HTML, Sass, JavaScript View the project live here, or check out my code on GitHub.</p>");
-});
-
-$('.eskimo').mouseover(function() {
-	$('.project-text').html("<h5>English Theatre Berlin Playbill</h5><p>English Theatre Berlin is the German capital's only producing and presenting organization expressly dedicated to English as the working language. I designed and illustrated a poster for the play Prophecy of a Nameless Eskimo, which ran from April to May 2009.</p>");
-});
-
-$('.chomarat').mouseover(function() {
-	$('.project-text').html("<h5>Chomarat Rebrand</h5><p>The French textile maker Chomarat manufactures reinforcement materials for the composite and building industries. When the company expanded in 2009, they needed help implementing their new brand identity in the American market.</p>");
-});
-
-$('.hoowaki').mouseover(function() {
-	$('.project-text').html("<h5>Hoowaki Brand Development</h5><p>Hoowaki transforms the surfaces of common materials through micro technology on extruded and molded products and processes. I worked with the startups's founders to create a logo that was modern and fresh, but would allow for flexibility and innovation as the company expanded into new product fields and markets. The two water droplets in the center of the logo represent one of Hoowaki's first technologies: the ability to make surfaces hydrophobic.</p>");
-});
-
-$('.photography').mouseover(function() {
-	$('.project-text').html("<h5>Photography</h5><p>All images captured with a Canon EOS Rebel XS and edited with Adobe Lightroom and/or Photoshop.</p>");
-});
-
-$('.fluor').mouseover(function() {
-	$('.project-text').html("<h5>Fluor Government Group Cutsheet</h5><p>Fluor offers a full range of professional and technical support services for government clients and contractors through its Technical Support Services organization. TSS enhances clients’ operational effectiveness with support services in operations; nuclear services; health, safety, environment and quality (HSE&Q); project; and engineering support.</p>");
-});
-
-$('.scansource').mouseover(function() {
-	$('.project-text').html("<h5>ScanSource Marketing Rate Card</h5><p>ScanSource is a value-added distributor offering AIDC, point-of-sale, communications and physical security solutions; this rate card lists the price for print, online, and event marketing projects.</p>");
-});
 
 // CALL FUNCTIONS ON PAGE LOAD & RESIZE //////////////////////////////////
 $(document).ready(function() {

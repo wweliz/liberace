@@ -75,20 +75,23 @@ a {
   color: #d45848;
   margin: 0; }
 
-.centeredText {
-  text-align: center; }
-
 .nopadding {
   padding: 0; }
 
 .empty {
   clear: both; }
 
-.slider {
-  margin: 0 1.875em 1.875em 1.875em; }
+.centerImage {
+  display: block;
+  margin: auto; }
 
-.project-text {
-  max-width: 40em; }
+.mice, .dice, .eskimo, .chomarat, .hoowaki, .photography, .fluor, .scansource {
+  padding: 1.25em; }
+  .mice p:last-of-type, .dice p:last-of-type, .eskimo p:last-of-type, .chomarat p:last-of-type, .hoowaki p:last-of-type, .photography p:last-of-type, .fluor p:last-of-type, .scansource p:last-of-type {
+    margin: 0; }
+
+.mice, .eskimo, .hoowaki, .fluor {
+  background-color: rgba(255, 255, 255, 0.05); }
 
 .footer {
   background: rgba(0, 0, 0, 0.2);
