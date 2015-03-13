@@ -9,12 +9,13 @@
 
 		<!-- build:css styles/vendor.css -->
 		<!-- bower:css -->
-		<link rel="stylesheet" href="bower_components/foundation/css/foundation.css" />
+		<link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
 		<!-- endbower -->
 		<!-- endbuild -->
 
 		<!-- build:css({.tmp,app}) styles/main.css -->
-		<link href='http://fonts.googleapis.com/css?family=Lato|Fredericka+the+Great' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato|Fredericka+the+Great">
+		<link rel="stylesheet" href="styles/lightbox.css">
 		<link rel="stylesheet" href="styles/main.css">
 		<!-- endbuild -->
 
@@ -164,7 +165,11 @@
 		<div class="mice">
 			<div class="row">
 				<div class="small-12 medium-4 columns">
-					<img src="images/mice-on-main/mice-front.png" class="centerImage" alt="Mice on Main project photo" height="200px" width="350px">
+					<a href="images/mice-on-main/mice-landing.jpg" data-lightbox="mice"><img src="images/mice-on-main/mice-front.png" class="centerImage" alt="Mice on Main project photo"></a>
+					<a href="images/mice-on-main/mice-home.jpg" data-lightbox="mice"></a>
+					<a href="images/mice-on-main/mice-nearest.jpg" data-lightbox="mice"></a>
+					<a href="images/mice-on-main/mice-history.jpg" data-lightbox="mice"></a>
+					<a href="images/mice-on-main/mice-settings.jpg" data-lightbox="mice"></a>
 				</div>
 
 				<div class="small-12 medium-8 columns">
@@ -182,7 +187,7 @@
 		<div class="dice">
 			<div class="row">
 				<div class="medium-4 columns">
-					<img src="images/dice/dice-front.png" class="centerImage" alt="AwesomeDice project photo" height="200px" width="350px">
+					<a href="images/dice/dice.jpg" data-lightbox="dice"><img src="images/dice/dice.jpg" class="centerImage" alt="AwesomeDice project photo"></a>
 				</div>
 
 				<div class="medium-8 columns">
@@ -199,7 +204,7 @@
 		<div class="eskimo">
 			<div class="row">
 				<div class="medium-4 columns">
-					<img src="images/eskimo/eskimo-front.png" class="centerImage" alt="English Theatre Berlin playbill close-up" height="200px" width="350px">
+					<a href="images/eskimo/eskimo.jpg" data-lightbox="eskimo"><img src="images/eskimo/eskimo-front.png" class="centerImage" alt="English Theatre Berlin playbill close-up"></a>
 				</div>
 
 				<div class="medium-8 columns">
@@ -212,7 +217,10 @@
 		<div class="chomarat">
 			<div class="row">
 				<div class="medium-4 columns">
-					<img src="images/chomarat/chomarat-front.png" class="centerImage" alt="Chomarat cutsheet close-up" height="200px" width="350px">
+					<a href="images/chomarat/chomarat-1.jpg" data-lightbox="chomarat"><img src="images/chomarat/chomarat-front.png" class="centerImage" alt="Chomarat cutsheet close-up"></a>
+					<a href="images/chomarat/chomarat-2.jpg" data-lightbox="chomarat"></a>
+					<a href="images/chomarat/chomarat-3.jpg" data-lightbox="chomarat"></a>
+					<a href="images/chomarat/chomarat-4.jpg" data-lightbox="chomarat"></a>
 				</div>
 
 				<div class="medium-8 columns">
@@ -225,7 +233,7 @@
 		<div class="hoowaki">
 			<div class="row">
 				<div class="medium-4 columns">
-					<img src="images/hoowaki/hoowaki-front.png" class="centerImage" alt="Hoowaki logo close-up" height="200px" width="350px">
+					<a href="images/hoowaki/hoowaki-comp.jpg" data-lightbox="hoowaki"><img src="images/hoowaki/hoowaki-front.png" class="centerImage" alt="Hoowaki logo close-up"></a>
 				</div>
 
 				<div class="medium-8 columns">
@@ -238,7 +246,12 @@
 		<div class="photography">
 			<div class="row">
 				<div class="medium-4 columns">
-					<img src="images/photography/old-barn-front.png" class="centerImage" alt="old barn photo" height="200px" width="350px">
+					<a href="images/photography/barn.jpg" data-lightbox="photography"><img src="images/photography/old-barn-front.png" class="centerImage" alt="Old barn in field"></a>
+					<a href="images/photography/fagen.jpg" data-lightbox="photography"></a>
+					<a href="images/photography/keith.jpg" data-lightbox="photography"></a>
+					<a href="images/photography/marco.jpg" data-lightbox="photography"></a>
+					<a href="images/photography/triberg.jpg" data-lightbox="photography"></a>
+					<a href="images/photography/trier-church.jpg" data-lightbox="photography"></a>
 				</div>
 
 				<div class="medium-8 columns">
@@ -251,7 +264,8 @@
 		<div class="fluor">
 			<div class="row">
 				<div class="medium-4 columns">
-					<img src="images/tss/tss-front.png" class="centerImage" alt="Fluor/TSS cutsheet" height="200px" width="350px">
+					<a href="images/tss/tss-1.jpg" data-lightbox="fluor"><img src="images/tss/tss-front.png" class="centerImage" alt="Fluor/TSS cutsheet"></a>
+					<a href="images/tss/tss-2.jpg" data-lightbox="fluor"></a>
 				</div>
 
 				<div class="medium-8 columns">
@@ -260,22 +274,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="scansource">
-			<div class="row">
-				<div class="medium-4 columns">
-					<img src="images/scansource/scansource-front.png" class="centerImage" alt="ScanSource rate card cover page close-up" height="200px" width="350px">
-				</div>
-
-				<div class="medium-8 columns">
-					<h5>ScanSource Marketing Rate Card</h5>
-					<p>ScanSource is a value-added distributor offering AIDC, point-of-sale, communications and physical security solutions; this rate card lists the price for print, online, and event marketing projects.</p>
-				</div>
-			</div>
-		</div>		
-
-<!--	<div class="scansource"> <img src="images/scansource-front.png" alt="Design project photo" height="200px" width="350px"> </div> -->
-
 
 		<div class="footer">
 			<div class="row">
@@ -337,6 +335,7 @@
 
 			<!-- build:js scripts/plugins.js -->
 			<script src="scripts/jquery.fittext.js"></script>
+			<script src="scripts/lightbox.js"></script>
 				<!--CDN link for TweenMax-->
 			<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 			<!-- endbuild -->
