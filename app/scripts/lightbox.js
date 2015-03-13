@@ -24,7 +24,7 @@
     
     // Change to localize to non-english language
     LightboxOptions.prototype.albumLabel = function(curImageNum, albumSize) {
-      return "Image " + curImageNum + " of " + albumSize;
+      return 'Image ' + curImageNum + ' of ' + albumSize;
     };
 
     return LightboxOptions;
@@ -124,7 +124,7 @@
       $window.on('resize', $.proxy(this.sizeOverlay, this));
 
       $('select, object, embed').css({
-        visibility: "hidden"
+        visibility: 'hidden'
       });
 
       this.sizeOverlay();
@@ -144,7 +144,7 @@
       var $links;
 
       if (dataLightboxValue) {
-        $links = $($link.prop("tagName") + '[data-lightbox="' + dataLightboxValue + '"]');
+        $links = $($link.prop('tagName') + '[data-lightbox="' + dataLightboxValue + '"]');
         for (var i = 0; i < $links.length; i = ++i) {
           addToAlbum($($links[i]));
           if ($links[i] === $link[0]) {
@@ -157,7 +157,7 @@
           addToAlbum($link);
         } else {
           // If image is part of a set
-          $links = $($link.prop("tagName") + '[rel="' + $link.attr('rel') + '"]');
+          $links = $($link.prop('tagName') + '[rel="' + $link.attr('rel') + '"]');
           for (var j = 0; j < $links.length; j = ++j) {
             addToAlbum($($links[j]));
             if ($links[j] === $link[0]) {
@@ -287,7 +287,7 @@
       // arrows in image sets.
       var alwaysShowNav = false;
       try {
-        document.createEvent("TouchEvent");
+        document.createEvent('TouchEvent');
         alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices)? true: false;
       } catch (e) {}
 
@@ -322,7 +322,7 @@
 
       // Enable anchor clicks in the injected caption html.
       // Thanks Nate Wright for the fix. @https://github.com/NateWr
-      if (typeof this.album[this.currentImageIndex].title !== 'undefined' && this.album[this.currentImageIndex].title !== "") {
+      if (typeof this.album[this.currentImageIndex].title !== 'undefined' && this.album[this.currentImageIndex].title !== '') {
         this.$lightbox.find('.lb-caption')
           .html(this.album[this.currentImageIndex].title)
           .fadeIn('fast')
@@ -391,11 +391,11 @@
     // Closing time. :-(
     Lightbox.prototype.end = function() {
       this.disableKeyboardNav();
-      $(window).off("resize", this.sizeOverlay);
+      $(window).off('resize', this.sizeOverlay);
       this.$lightbox.fadeOut(this.options.fadeDuration);
       this.$overlay.fadeOut(this.options.fadeDuration);
       $('select, object, embed').css({
-        visibility: "visible"
+        visibility: 'visible'
       });
     };
 
