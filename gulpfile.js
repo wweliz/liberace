@@ -120,7 +120,12 @@ gulp.task('watch', ['serve'], function () {
     gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('deploy', ['build'], function () {
+gulp.task('cname', function() {
+ 	return gulp.src('app/CNAME')
+		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('deploy', ['build', 'cname'], function () {
   return gulp.src('dist')
     .pipe($.subtree())
     .pipe($.clean());
