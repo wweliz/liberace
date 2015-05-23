@@ -40,7 +40,7 @@ function makeSparkles() {
 		blink();
 	}
 	
-	for(var i=0;i<layers;i++){
+	for(var q=0;q<layers;q++){
 		var $layer=$('<canvas/>')
 			.addClass('layer')
 			.attr({
@@ -69,7 +69,9 @@ function makeSparkles() {
 		if(Math.random()<0.1){
 			s*=2;
 		}
-		if(s<0) s=0;
+		if(s<0){
+			s=0;
+		}
 		
 		var a=1;
 		if(s<1){
@@ -100,7 +102,7 @@ function makeSparkles() {
 function resizeCanvas() {
 	var canvas = $('.layer');
 
-	canvas.height = $(window).height(); - $('.footer').height();
+	canvas.height = $(window).height() - $('.footer').height();
 	canvas.width = $(window).width();
 }
 
