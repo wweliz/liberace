@@ -80,7 +80,7 @@ gulp.task('default', ['clean'], function () {
 gulp.task('serve', ['styles'], function () {
     browserSync.init(null, {
         server: {
-            baseDir: 'app',
+            baseDir: 'dist',
             directory: true
         },
         debugInfo: false,
