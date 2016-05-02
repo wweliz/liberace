@@ -103,14 +103,14 @@ a {
 }
 
 // SKILLS SECTION ///////////////////////////////
-.nopadding { padding: 0;}
+.nopadding { padding: 0; }
 
 .empty { clear: both; }
 
 // WORK SECTION /////////////////////////////////
 .centerImage {
-  display: block;
-  margin: auto;
+	display: block;
+	margin: auto;
 }
 
 .mice, .dice, .eskimo, .chomarat, .hoowaki, .photography, .fluor, .scansource {
@@ -118,9 +118,7 @@ a {
 	padding: 1.25em;
 }
 
-.mice, .eskimo, .hoowaki, .fluor {
-  background-color: rgba(255, 255, 255, 0.05);
-}
+.mice, .eskimo, .hoowaki, .fluor { background-color: rgba(255, 255, 255, 0.05); }
 
 // FOOTER ///////////////////////////////////////
 /////////////////////////////////////////////////
@@ -140,21 +138,56 @@ a {
 
 // ICON ROTATE //////////////////////////////////
 /////////////////////////////////////////////////
-.icon:hover {
-	-webkit-transform:rotate(360deg);
-	-moz-transform:rotate(360deg);
-	-o-transform:rotate(360deg);
-	transform:rotate(360deg);
+svg .icon {
+	height: 24px;
+	width: 24px;
+	fill: #fff;
+}
 
-	-webkit-transform-origin:center;
-	-moz-transform:center;
-	-o-transform-origin:center;
-	transform-origin:center;
+@-webkit-keyframes rotateIcon {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
 
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+@-moz-keyframes rotateIcon {
+	from {
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
+
+@keyframes rotateIcon {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+svg .icon.animated {
+	fill: #008CBA;
+
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	-webkit-animation: rotateIcon 1s;
+	-moz-animation: rotateIcon 1s;
+	-o-animation: rotateIcon 1s;
+	animation: rotateIcon 1s;
 }
 
 // PULSATING HEART //////////////////////////////
