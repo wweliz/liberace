@@ -144,3 +144,8 @@ $(window).resize(function() {
 	centerAboutText();
 	make2Columns();
 });
+
+// TWITTER AND GITHUB LOGO ANIMATION /////////////////////////////////////
+$('.icon').bind('mouseenter mouseleave', function() {
+  $(this).toggleClass('animated');
+});
